@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700|Poppins:300,400,500,600,700,800,900&display=swap&subset=latin-ext');
+
+
+
+/*---------------------Special paddings/margins/text--------------------------*/
+
+.no-padding {
+    padding: 0;
+}
+
+.uppercase-text {
+    text-transform: uppercase;
+}
+
+.header-text {
+    
+}
+
+.subheader-text {
+    
+}
+
+/*----------------------------------Colors------------------------------------*/
+
+
+/*---------------------------------Headers------------------------------------*/
+
+
+/*-------------------------------Hover effects--------------------------------*/
+
+
+/*----------------------------------Footer------------------------------------*/
