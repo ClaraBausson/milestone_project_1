@@ -1,8 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700|Poppins:300,400,500,600,700,800,900&display=swap&subset=latin-ext');
-
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Poppins:100,200,300,400,500,600,700,800,900&display=swap&subset=latin-ext');
 
 
 /*---------------------Special paddings/margins/text--------------------------*/
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
 
 .no-padding {
     padding: 0;
@@ -12,11 +17,66 @@
     text-transform: uppercase;
 }
 
-.header-text {}
+.header-text {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: x-large;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: #FFFFFF;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
 
-.subheader-text {}
+.header-text:hover {
+    color: #FF652F;;
+}
+
+.subheader-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #FAFAFA;
+    padding-bottom: 0;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.subheader-text:hover {
+    color: #FF652F;;
+}
 
 /*----------------------------------Colors------------------------------------*/
+
+.bg-primary-dark,
+.navbar-dark {
+    background-color: #1a1a1d;
+}
+
+.navbar-toggler {
+    background-color: #29292E;
+    border: 1px solid #000000;
+}
+
+.fa.fa-navicon {
+    color: #fafafa;
+    background-color: #29292E;
+    font-size: 2rem;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.fa.fa-navicon:hover {
+    color: #FF652F;
+}
+
 
 /*----------------------------------Header------------------------------------*/
 
@@ -25,26 +85,18 @@
 }
 
 .social-links-header div {
-    padding: 0 5px;
+    padding-left: 14px;
 }
 
 .social-links-header div a i {
     width: 32px;
     height: 32px;
-    padding: 12px 0;
-    border-radius: 50%;
-    font-size: 13px;
+    padding: 9px 0;
+    border-radius: 30%;
+    font-size: 15px;
     text-align: center;
     color: #fafafa;
-    background: #8f8f8f;
-    transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-}
-
-.social-links-header div a i:hover {
-    background: #FF6C00;
+    background-color: #FF652F;
 }
 
 /*-------------------------------Hover effects--------------------------------*/
@@ -54,20 +106,41 @@
 footer {
     background-color: #525252;
     color: #fafafa;
-    max-height: 125px;
     margin: 0;
+}
+
+#InputEmail {
+    width: 300px;
+    text-align: center;
+    background: #000;
+    border: 1px solid #fff;
+    text-transform: capitalize;
+    margin: 20px auto 15px;
+    max-width: 100%;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.btn-email-join {
+    width: 300px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    max-width: 100%;
+    color: #000;
+    letter-spacing: 1px;
 }
 
 .social-links li a i {
     width: 32px;
     height: 32px;
-    padding: 12px 0;
+    padding: 9px 0;
     border-radius: 50%;
-    font-size: 13px;
-    line-height: 7px;
+    font-size: 15px;
     text-align: center;
     color: #fafafa;
-    background: #8f8f8f;
+    background: rgba(143, 143, 143, 0);
     transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
@@ -75,9 +148,9 @@ footer {
 }
 
 .social-links li a i:hover {
-    background: #FF6C00;
+    background: #FF652F;
 }
 
 #footer-details {
-    padding: 20px;
+    padding-top: 15px;
 }
