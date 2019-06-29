@@ -3,10 +3,20 @@
 
 /*---------------------Special paddings/margins/text--------------------------*/
 
-body {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 200;
-    letter-spacing: 1px;
+h1 {
+    font-size: 1.15em;
+}
+
+h2 {
+    font-size: 1.1em;
+}
+
+h3 {
+    font-size: 1.08em;
+}
+
+h4 {
+    font-size: 1.02em;
 }
 
 .no-padding {
@@ -15,6 +25,46 @@ body {
 
 .uppercase-text {
     text-transform: uppercase;
+}
+
+
+/*----------------------------------Colors------------------------------------*/
+
+.bg-primary-dark,
+.navbar-dark {
+    background-color: #1a1a1d;
+}
+
+.navbar-toggler {
+    background-color: #29292E;
+    border: 1px solid #000000;
+}
+
+
+/*----------------------------------Header------------------------------------*/
+
+.navbar {
+    -webkit-box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.75);
+}
+
+.fa.fa-navicon {
+    color: #fafafa;
+    background-color: #29292E;
+    font-size: 2rem;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+button .fa.fa-navicon:hover {
+    color: #FF652F;
+}
+
+.active a {
+    color: #FF652F;
 }
 
 .header-text {
@@ -31,7 +81,8 @@ body {
 }
 
 .header-text:hover {
-    color: #FF652F;;
+    color: #FF652F;
+    ;
 }
 
 .subheader-text {
@@ -48,37 +99,9 @@ body {
 }
 
 .subheader-text:hover {
-    color: #FF652F;;
-}
-
-/*----------------------------------Colors------------------------------------*/
-
-.bg-primary-dark,
-.navbar-dark {
-    background-color: #1a1a1d;
-}
-
-.navbar-toggler {
-    background-color: #29292E;
-    border: 1px solid #000000;
-}
-
-.fa.fa-navicon {
-    color: #fafafa;
-    background-color: #29292E;
-    font-size: 2rem;
-    transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-}
-
-.fa.fa-navicon:hover {
     color: #FF652F;
+    ;
 }
-
-
-/*----------------------------------Header------------------------------------*/
 
 .social-links-header {
     padding-bottom: 15px;
@@ -99,22 +122,20 @@ body {
     background-color: #FF652F;
 }
 
-/*-------------------------------Hover effects--------------------------------*/
 
 /*----------------------------------Footer------------------------------------*/
 
 footer {
     background-color: #525252;
     color: #fafafa;
-    margin: 0;
+    position: absolute;
 }
 
 #InputEmail {
-    width: 300px;
+    width: 250px;
     text-align: center;
     background: #000;
     border: 1px solid #fff;
-    text-transform: capitalize;
     margin: 20px auto 15px;
     max-width: 100%;
     color: #fff;
@@ -122,14 +143,20 @@ footer {
 }
 
 .btn-email-join {
-    width: 300px;
+    width: 250px;
     text-align: center;
     background: #fff;
-    border: 1px solid #fff;
-    text-transform: uppercase;
+    border: 1px solid black;
     max-width: 100%;
     color: #000;
     letter-spacing: 1px;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+.btn-email-join:hover {
+    color: #FF652F;
 }
 
 .social-links li a i {
@@ -153,4 +180,141 @@ footer {
 
 #footer-details {
     padding-top: 15px;
+}
+
+/*-----------------------------------GLOBAL-----------------------------------*/
+
+html {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+@media (min-width:576px) {
+    html {
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width:768px) {
+    html {
+        font-size: 0.9em;
+    }
+}
+
+@media (min-width:992px) {
+    html {
+        font-size: 1em;
+    }
+}
+
+@media (min-width:1200px) {
+    html {
+        font-size: 1.1em;
+    }
+}
+
+
+section {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    max-width: none;
+    background-color: #373B44;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*--------------------------------Home section--------------------------------*/
+
+section:nth-of-type(1) {
+    background-color: #373B44;
+    background-image: url("../assets/images/bg/bg-book.jpg");
+}
+
+/*-------------------------------Gallery section------------------------------*/
+
+section:nth-of-type(2) {
+    background-color: #373B44;
+    background-image: url("https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350");
+}
+
+/*--------------------------------Music section-------------------------------*/
+
+section:nth-of-type(3) {
+    background-color: #373B44;
+    background-image: url("../assets/images/bg/bg-book.jpg");
+}
+
+/*--------------------------------Tour section--------------------------------*/
+
+section:nth-of-type(4) {
+    background-color: #373B44;
+    background-image: url("https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350");
+}
+
+/*-------------------------------About section--------------------------------*/
+
+section:nth-of-type(5) {
+    background-color: #373B44;
+    background-image: url("../assets/images/bg/bg-book.jpg");
+}
+
+/*------------------------------Booking section-------------------------------*/
+
+section:nth-of-type(6) {
+    background-color: #373B44;
+    background-image: url("../assets/images/bg/bg-book.jpg");
+}
+
+.container {
+    background-color: rgb(152, 129, 98);
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 80%;
+}
+
+.booking-header {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: #FFFFFF;
+}
+
+.booking-subheader {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #FAFAFA;
+    padding-bottom: 0;
+}
+
+label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.btn-submit {
+    width: 250px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid black;
+    max-width: 100%;
+    color: #000;
+    letter-spacing: 1px;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+.btn-submit:hover {
+    color: #FF652F;
 }
