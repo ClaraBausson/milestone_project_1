@@ -5,14 +5,29 @@
 
 h1 {
     font-size: 1.15em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin: 0px auto 5px;
 }
 
 h2 {
     font-size: 1.1em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-bottom: 0;
 }
 
 h3 {
     font-size: 1.08em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-bottom: 0;
 }
 
 h4 {
@@ -27,7 +42,6 @@ h4 {
     text-transform: uppercase;
 }
 
-
 /*----------------------------------Colors------------------------------------*/
 
 .bg-primary-dark,
@@ -40,10 +54,83 @@ h4 {
     border: 1px solid #000000;
 }
 
+/*------------------------------Block dividers--------------------------------*/
+
+.block-divider {
+    width: 75px;
+    height: 3px;
+    border: 0;
+}
+
+.block-divider--orange {
+    background-color: #FF652F;
+}
+
+.block-divider--white {
+    background-color: white;
+}
+
+.block-divider--short {
+    width: 35px;
+}
+
+
+/*-----------------------------------GLOBAL-----------------------------------*/
+
+html {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+@media (min-width:576px) {
+    html {
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width:768px) {
+    html {
+        font-size: 0.9em;
+    }
+}
+
+@media (min-width:992px) {
+    html {
+        font-size: 1em;
+    }
+}
+
+@media (min-width:1200px) {
+    html {
+        font-size: 1.1em;
+    }
+}
+
+section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    max-width: none;
+    background-color: #373B44;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: scroll;
+}
+
+section:nth-of-type(2n) {
+    background-attachment: fixed;
+}
+
 
 /*----------------------------------Header------------------------------------*/
 
 .navbar {
+    top: 0;
+    left: 0;
+    width: 100%;
     -webkit-box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.75);
@@ -128,7 +215,8 @@ button .fa.fa-navicon:hover {
 footer {
     background-color: #525252;
     color: #fafafa;
-    position: absolute;
+    position: static;
+    height: 250px;
 }
 
 #InputEmail {
@@ -182,115 +270,104 @@ footer {
     padding-top: 15px;
 }
 
-/*-----------------------------------GLOBAL-----------------------------------*/
+/*-------------------------------Landing section------------------------------*/
 
-html {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 200;
-    letter-spacing: 2px;
-    font-size: 12px;
-}
-
-@media (min-width:576px) {
-    html {
-        font-size: 0.8em;
-    }
-}
-
-@media (min-width:768px) {
-    html {
-        font-size: 0.9em;
-    }
-}
-
-@media (min-width:992px) {
-    html {
-        font-size: 1em;
-    }
-}
-
-@media (min-width:1200px) {
-    html {
-        font-size: 1.1em;
-    }
-}
-
-
-section {
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    max-width: none;
+section:nth-of-type(1) {
     background-color: #373B44;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-image: url("../assets/images/bg/bg-landing.jpg");
 }
 
 /*--------------------------------Home section--------------------------------*/
 
-section:nth-of-type(1) {
+section:nth-of-type(2) {
     background-color: #373B44;
-    background-image: url("../assets/images/bg/bg-book.jpg");
+    background-image: url("../assets/images/bg/bg-home.jpg");
 }
 
 /*-------------------------------Gallery section------------------------------*/
 
-section:nth-of-type(2) {
+section:nth-of-type(3) {
     background-color: #373B44;
-    background-image: url("https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350");
+    background-image: url("../assets/images/bg/bg-gallery.jpg");
 }
 
 /*--------------------------------Music section-------------------------------*/
 
-section:nth-of-type(3) {
+section:nth-of-type(4) {
     background-color: #373B44;
-    background-image: url("../assets/images/bg/bg-book.jpg");
+    background-image: url("../assets/images/bg/bg-music.jpg");
 }
 
 /*--------------------------------Tour section--------------------------------*/
 
-section:nth-of-type(4) {
+section:nth-of-type(5) {
     background-color: #373B44;
-    background-image: url("https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350");
+    background-image: url("../assets/images/bg/bg-tour.jpg");
 }
 
 /*-------------------------------About section--------------------------------*/
 
-section:nth-of-type(5) {
-    background-color: #373B44;
-    background-image: url("../assets/images/bg/bg-book.jpg");
+section:nth-of-type(6) {
+    background-color: #FF652F;
+    background-image: url("../assets/images/bg/bg-about.jpg");
+}
+
+.container-about {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #000000;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+}
+
+.square-img {
+    display: block;
+    margin: 0px auto 15px;
+    border-radius: 5%;
+    width: 100%;
+}
+
+.round-img {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+}
+
+.border-left--orange {
+    display: inline-block;
+    width: 0;
+    height: 10em;
+    border-left: 2px solid #FF652F;
 }
 
 /*------------------------------Booking section-------------------------------*/
 
-section:nth-of-type(6) {
+section:nth-of-type(7) {
     background-color: #373B44;
-    background-image: url("../assets/images/bg/bg-book.jpg");
+    background-image: url("../assets/images/bg/bg-booking.jpg");
 }
 
-.container {
+.container-booking {
     background-color: rgb(152, 129, 98);
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 100%;
-    width: 80%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #000000;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
 }
 
 .booking-header {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 10px;
     color: #FFFFFF;
 }
 
 .booking-subheader {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 3px;
     color: #FAFAFA;
-    padding-bottom: 0;
 }
 
 label {
@@ -308,6 +385,7 @@ label {
     background: #fff;
     border: 1px solid black;
     max-width: 100%;
+    margin: auto;
     color: #000;
     letter-spacing: 1px;
     transition: all 0.5s ease-in-out;
