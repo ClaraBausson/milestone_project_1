@@ -42,6 +42,28 @@ h4 {
     text-transform: uppercase;
 }
 
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center-vert {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center-hor {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /*----------------------------------Colors------------------------------------*/
 
 .bg-primary-dark,
@@ -153,7 +175,7 @@ section {
     background-attachment: scroll;
 }
 
-section:nth-of-type(2n) {
+section:nth-of-type(2n+1) {
     background-attachment: fixed;
 }
 
@@ -317,57 +339,94 @@ section:nth-of-type(2) {
     background-image: url("../assets/images/bg/bg-home.jpg");
 }
 
-/*-------------------------------Gallery section------------------------------*/
+/*-------------------------------Tour section------------------------------*/
 
 section:nth-of-type(3) {
+    background-color: #373B44;
+    background-image: url("../assets/images/bg/bg-tour.jpg");
+}
+
+/*-------------------------------Gallery section------------------------------*/
+
+section:nth-of-type(4) {
     background-color: #373B44;
     background-image: url("../assets/images/bg/bg-gallery.jpg");
 }
 
 /*--------------------------------Music section-------------------------------*/
 
-section:nth-of-type(4) {
-    background-color: #373B44;
-    background-image: url("../assets/images/bg/bg-music.jpg");
+section:nth-of-type(5) {
+    background-color: #FAFAFA;
 }
 
 .container-music {
     background-color: rgb(152, 129, 98);
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 5px;
-    margin: 10px;
-    border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 15px;
 }
 
-.music-cover {
+.div-album-cover {
     height: 80%;
     width: 80px;
 }
 
+.album-cover {
+    text-align: center;
+}
+
+.album-cover img {
+    height: 300px;
+    width: 300px;
+    box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.5);
+    margin: 15px;
+}
+
+.container-music-even {
+    background-color: blue;
+}
+
+.container-music-odd {
+    background-color: red;
+}
+
+.album-links {
+    text-align: center;
+    color: white;
+}
+
+.album-listen {
+    width: 250px;
+    text-align: center;
+    background: #000;
+    border: 1px solid #fff;
+    margin: 20px auto 15px;
+    max-width: 100%;
+}
+
+.album-listen a {
+    color: #fff;
+    letter-spacing: 1px;
+}
+
 /*--------------------------------Tour section--------------------------------*/
 
-section:nth-of-type(5) {
+section:nth-of-type(6) {
     background-color: #373B44;
     background-image: url("../assets/images/bg/bg-tour.jpg");
 }
 
 /*-------------------------------About section--------------------------------*/
 
-section:nth-of-type(6) {
+section:nth-of-type(7) {
     background-color: #FF652F;
     background-image: url("../assets/images/bg/bg-about.jpg");
 }
 
 .container-about {
     background-color: rgba(250, 250, 250, 0.98);
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid grey;
-    border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
+    padding: 15px;
 }
 
 .border-left--orange {
@@ -379,7 +438,7 @@ section:nth-of-type(6) {
 
 /*------------------------------Booking section-------------------------------*/
 
-section:nth-of-type(7) {
+section:nth-of-type(8) {
     background-color: #373B44;
     background-image: url("../assets/images/bg/bg-booking.jpg");
 }
@@ -387,12 +446,7 @@ section:nth-of-type(7) {
 .container-booking {
     background-color: rgb(152, 129, 98);
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 5px;
-    margin: 10px;
-    border: 1px solid #000000;
-    border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
+    padding: 15px;
 }
 
 label {
@@ -416,8 +470,4 @@ label {
     transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
-}
-
-.btn-submit:hover {
-    color: #FF652F;
 }
