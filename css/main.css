@@ -163,6 +163,16 @@ html {
     }
 }
 
+body {
+    padding-top: 50px;
+}
+
+@media (min-width:992px) {
+    body {
+        padding-top: 60px;
+    }
+}
+
 section {
     width: 100%;
     margin: 0;
@@ -186,9 +196,17 @@ section:nth-of-type(2n+1) {
     top: 0;
     left: 0;
     width: 100%;
+    position: fixed;
+    z-index: 99 !important;
     -webkit-box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.75);
+}
+
+@media (min-width:992px) {
+    .navbar {
+        height: 60px;
+    }
 }
 
 .fa.fa-navicon {
@@ -332,6 +350,10 @@ section:nth-of-type(1) {
     background-image: url("../assets/images/bg/bg-landing.jpg");
 }
 
+.container-landing {
+    height: 100vh;
+}
+
 /*--------------------------------Home section--------------------------------*/
 
 section:nth-of-type(2) {
@@ -345,6 +367,55 @@ section:nth-of-type(3) {
     background-color: #373B44;
     background-image: url("../assets/images/bg/bg-tour.jpg");
 }
+
+/* ----------------------------------------Work History */
+
+.tour-heading {
+    color: #fafafa;
+    margin-bottom: 50px;
+}
+
+.timeline-item {
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    color: #fafafa;
+    border-left: 1px solid;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background: #fafafa;
+}
+
+.tour-items {
+    margin-bottom: 30px;
+}
+
 
 /*-------------------------------Gallery section------------------------------*/
 
