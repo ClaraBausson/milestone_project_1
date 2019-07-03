@@ -368,60 +368,17 @@ section:nth-of-type(3) {
     background-image: url("../assets/images/bg/bg-tour.jpg");
 }
 
-/* ----------------------------------------Work History */
-
-.tour-heading {
-    color: #fafafa;
-    margin-bottom: 50px;
-}
-
-.timeline-item {
-    padding: 4em 2em 0em 2em;
-    position: relative;
-    color: #fafafa;
-    border-left: 1px solid;
-}
-
-.timeline-item p {
-    padding: 0;
-    margin: 0;
-}
-
-.timeline-item:before {
-    content: attr(data-dates);
-    position: absolute;
-    left: 2.5em;
-    top: 3em;
-    display: block;
-    font-family: "Exo", sans-serif;
-    font-weight: 500;
-    font-size: 0.8em;
-    padding: 0;
-    margin: 0;
-}
-
-.timeline-item:after {
-    width: 12px;
-    height: 12px;
-    display: block;
-    top: 2.4em;
-    position: absolute;
-    left: -6px;
-    border-radius: 12px;
-    content: '';
-    background: #fafafa;
-}
-
-.tour-items {
-    margin-bottom: 30px;
-}
-
-
 /*-------------------------------Gallery section------------------------------*/
 
 section:nth-of-type(4) {
     background-color: #373B44;
     background-image: url("../assets/images/bg/bg-gallery.jpg");
+}
+
+.container-gallery {
+    background-color: rgba(250, 250, 250, 0.98);
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /*--------------------------------Music section-------------------------------*/
