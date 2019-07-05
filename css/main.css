@@ -445,6 +445,95 @@ section:nth-of-type(6) {
     background-image: url("../assets/images/bg/bg-tour.jpg");
 }
 
+.container-tour {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+}
+
+.tour_events {
+    padding: 0 50px;
+}
+
+.events {
+    border-bottom: 1px solid #CCCDCE !important;
+    padding-bottom: 5px;
+    padding-top: 30px;
+}
+
+.date,
+.year {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #CCCDCE;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    letter-spacing: 3px;
+}
+
+.year {
+    font-size: 1.8em;
+    letter-spacing: 5px;
+}
+
+.event_location {
+    padding: 0 0 10px 5px;
+}
+
+.event,
+.venue {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.location {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.1em;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+.event_link {
+    padding: 10px;
+    margin: auto 0;
+    text-align: left;
+}
+
+@media (min-width:992px) {
+    .event_link {
+        text-align: right;
+    }
+}
+
+.link {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #CCCDCE;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    display: inline-block;
+    padding: 5px;
+    border: 2px solid #CCCDCE;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.link:hover {
+    color: black;
+    text-decoration: none;
+
+    background-color: #CCCDCE;
+}
+
+
+
 /*-------------------------------About section--------------------------------*/
 
 section:nth-of-type(7) {
