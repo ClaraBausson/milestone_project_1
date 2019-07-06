@@ -76,11 +76,10 @@ h4 {
     border: 1px solid #000000;
 }
 
-
 .booking-header,
 .booking-subheader,
 .music-header {
-    color: #FAFAFA;
+    color: black;
 }
 
 /*------------------------------Block dividers--------------------------------*/
@@ -105,60 +104,61 @@ h4 {
 
 /*-----------------------------------Buttons----------------------------------*/
 
-.btn-link a {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 1.1rem;
-    color: #CCCDCE;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-decoration: none;
-
-    display: inline-block;
-    padding: 5px;
-    border: 2px solid #CCCDCE;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-}
-
-.btn-link {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 1.1rem;
-    color: #CCCDCE;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-decoration: none;
-
-    display: inline-block;
-    padding: 5px;
-    border: 2px solid #CCCDCE;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-}
-
-.btn-link:hover {
-    color: black;
-    text-decoration: none;
-
-    background-color: #CCCDCE;
-}
-
-.btn-submit {
-    width: 250px;
-    text-align: center;
-    background: #fff;
-    border: 1px solid black;
-    max-width: 100%;
-    margin: auto;
-    color: #000;
-    letter-spacing: 1px;
+.fa.fa-navicon {
+    color: #fafafa;
+    background-color: #29292E;
+    font-size: 2rem;
     transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
 }
+
+button .fa.fa-navicon:hover {
+    color: #FF652F;
+}
+
+.btn-link a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #FF652F;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn-link,
+.btn-submit {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #FF652F;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    display: inline-block;
+    width: 105px;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid #FF652F;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.btn-link:hover,
+.btn-link a:hover,
+.btn-submit:hover{
+    color: rgb(250, 250, 250);
+    text-decoration: none;
+
+    background-color: #FF652F;
+}
+
 
 /*-----------------------------------Images-----------------------------------*/
 
@@ -247,6 +247,10 @@ section:nth-of-type(2n+1) {
     background-attachment: fixed;
 }
 
+.container {
+    max-width: 80em;
+}
+
 
 /*----------------------------------Header------------------------------------*/
 
@@ -265,20 +269,6 @@ section:nth-of-type(2n+1) {
     .navbar {
         height: 60px;
     }
-}
-
-.fa.fa-navicon {
-    color: #fafafa;
-    background-color: #29292E;
-    font-size: 2rem;
-    transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-}
-
-button .fa.fa-navicon:hover {
-    color: #FF652F;
 }
 
 .header-text {
@@ -422,7 +412,7 @@ section:nth-of-type(2) {
 }
 
 .home-tour {
-    background-color: rgb(152, 129, 98);
+    background-color: #FF652F;
     background-color: rgba(250, 250, 250, 0.8);
     padding: 15px;
     color: black;
@@ -463,10 +453,11 @@ section:nth-of-type(2) {
 }
 
 .home-release {
-    background-color: rgb(152, 129, 98);
+    background-color: #FF652F;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 15px;
-    color: white;
+    
+    color: #FAFAFA;
 }
 
 .release-album img {
@@ -479,13 +470,19 @@ section:nth-of-type(2) {
 }
 
 .home-news {
-    background-color: green;
+    background-color: #FF652F;
+    background-color: rgba(255,101,47,0.8);
     padding: 15px;
+    
+    color: black;
 }
 
 .home-book {
-    background-color: purple;
+    background-color: #FF652F;
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 15px;
+    
+    color: #FAFAFA;
 }
 
 /*-------------------------------Tour section------------------------------*/
@@ -493,6 +490,70 @@ section:nth-of-type(2) {
 section:nth-of-type(3) {
     background-color: #373B44;
     background-image: url("../assets/images/bg/bg-tour.jpg");
+}
+
+.container-tour {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+}
+
+.tour_events {
+    padding: 0 50px;
+}
+
+.events {
+    border-bottom: 1px solid #CCCDCE !important;
+    padding-bottom: 5px;
+    padding-top: 30px;
+}
+
+.date,
+.year {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #CCCDCE;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    letter-spacing: 3px;
+}
+
+.year {
+    font-size: 1.8em;
+    letter-spacing: 5px;
+}
+
+.event_location {
+    padding: 0 0 10px 5px;
+}
+
+.event,
+.venue {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.location {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.1em;
+    color: #FF652F;
+    color: rgba(255,101,47,0.8);
+    text-transform: uppercase;
+
+}
+
+.event_link {
+    padding: 10px;
+    margin: auto 0;
+    text-align: left;
+}
+
+@media (min-width:992px) {
+    .event_link {
+        text-align: right;
+    }
 }
 
 /*-------------------------------Gallery section------------------------------*/
@@ -560,88 +621,18 @@ section:nth-of-type(5) {
     max-width: 100%;
 }
 
-/*--------------------------------Tour section--------------------------------*/
-
-section:nth-of-type(6) {
-    background-color: #373B44;
-    background-image: url("../assets/images/bg/bg-tour.jpg");
-}
-
-.container-tour {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 15px;
-}
-
-.tour_events {
-    padding: 0 50px;
-}
-
-.events {
-    border-bottom: 1px solid #CCCDCE !important;
-    padding-bottom: 5px;
-    padding-top: 30px;
-}
-
-.date,
-.year {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    color: #CCCDCE;
-    text-transform: uppercase;
-    font-size: 1.1em;
-    letter-spacing: 3px;
-}
-
-.year {
-    font-size: 1.8em;
-    letter-spacing: 5px;
-}
-
-.event_location {
-    padding: 0 0 10px 5px;
-}
-
-.event,
-.venue {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 200;
-    color: #fff;
-    text-transform: uppercase;
-}
-
-.location {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 1.1em;
-    color: #fff;
-    text-transform: uppercase;
-
-}
-
-.event_link {
-    padding: 10px;
-    margin: auto 0;
-    text-align: left;
-}
-
-@media (min-width:992px) {
-    .event_link {
-        text-align: right;
-    }
-}
-
-
-
 /*-------------------------------About section--------------------------------*/
 
-section:nth-of-type(7) {
+section:nth-of-type(6) {
     background-color: #FF652F;
     background-image: url("../assets/images/bg/bg-about.jpg");
 }
 
 .container-about {
-    background-color: rgba(250, 250, 250, 0.98);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 15px;
+    
+    color: #FAFAFA;
 }
 
 .border-left--orange {
@@ -653,22 +644,38 @@ section:nth-of-type(7) {
 
 /*------------------------------Booking section-------------------------------*/
 
-section:nth-of-type(8) {
+section:nth-of-type(7) {
     background-color: #373B44;
     background-image: url("../assets/images/bg/bg-booking.jpg");
 }
 
 .container-booking {
-    background-color: rgb(152, 129, 98);
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(250, 250, 250, 0.8);
     padding: 15px;
+}
+
+.wrapper-book-form {
+    width: 100%;
+}
+
+@media (min-width:992px) {
+    .wrapper-book-form {
+        width: 35%;
+    }
+    .container-booking {
+        background-color: rgba(250, 250, 250, 0.6);
+    }
+}
+
+.booking-subheader {
+    font-size: 0.95em;
 }
 
 label {
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 0.9rem;
+    font-weight: 500;
+    font-size: 0.9em;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #fff;
+    color: #FF652F;
 }

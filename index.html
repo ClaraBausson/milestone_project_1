@@ -77,7 +77,7 @@
                         <a class="nav-link subheader-text hvr-float" href="#About">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link subheader-text hvr-float" href="#Book">Book us</a>
+                        <a class="nav-link subheader-text hvr-float" href="#Booking">Book us</a>
                     </li>
                 </ul>
                 <!---SOCIAL LINKS - Mobile only ------------------------------->
@@ -168,7 +168,7 @@
                         <h1>Looking for a band?</h1>
                         <p>The Monkees are one of the most exciting live bands currently on the market. We’re most competitively priced and are available to perform UK wide and internationally. Contact us to check our availability and get a quote for your
                             event by using the form on our website.</p>
-                        <a class="btn-link" target="_blank" href="#Book">Check us out</a>
+                        <a class="btn-link text-center float-md-right" target="_blank" href="#Book">Book us</a>
                     </div>
                 </div>
             </div>
@@ -483,8 +483,8 @@
                     <div class="col-6 album-links">
                         <div class="center">
                             <h1 class="uppercase">Good Times!</h1>
-                            <div class="btn-link">
-                                <a href="https://open.spotify.com/embed/album/4UwFizSE0TB6EzTfkkxlbF">DOWNLOAD / LISTEN</a>
+                            <div>
+                                <a  class="btn-link" href="https://open.spotify.com/embed/album/4UwFizSE0TB6EzTfkkxlbF">GET IT</a>
                             </div>
                         </div>
                     </div>
@@ -493,8 +493,8 @@
                     <div class="col-6 album-links">
                         <div class="center">
                             <h1 class="uppercase">Christmas Party</h1>
-                            <div class="btn-link">
-                                <a href="https://open.spotify.com/album/3WzJHiv489Wb9So4K7csLy">DOWNLOAD / LISTEN</a>
+                            <div>
+                                <a  class="btn-link" href="https://open.spotify.com/embed/album/4UwFizSE0TB6EzTfkkxlbF">GET IT</a>
                             </div>
                         </div>
                     </div>
@@ -511,8 +511,8 @@
                     <div class="col-6 album-links">
                         <div class="center">
                             <h1 class="uppercase">Missing Links</h1>
-                            <div class="btn-link">
-                                <a href="https://open.spotify.com/album/2IxWV5gvMw8Hylg8Qp0Grz">DOWNLOAD / LISTEN</a>
+                            <div>
+                                <a  class="btn-link" href="https://open.spotify.com/embed/album/4UwFizSE0TB6EzTfkkxlbF">GET IT</a>
                             </div>
                         </div>
                     </div>
@@ -521,8 +521,8 @@
                     <div class="col-6 album-links">
                         <div class="center">
                             <h1 class="uppercase">Missing Links: Volume Two</h1>
-                            <div class="btn-link">
-                                <a href="https://open.spotify.com/album/2hTTYyDCFVd4qhFV8Bm7cS">DOWNLOAD / LISTEN</a>
+                            <div>
+                                <a  class="btn-link" href="https://open.spotify.com/embed/album/4UwFizSE0TB6EzTfkkxlbF">GET IT</a>
                             </div>
                         </div>
                     </div>
@@ -539,8 +539,8 @@
                     <div class="col-6 album-links">
                         <div class="center">
                             <h1 class="uppercase">Missing Links: Volume THree</h1>
-                            <div class="btn-link">
-                                <a href="https://open.spotify.com/album/0HnpfEflo4ZrTKrB9GoY50">DOWNLOAD / LISTEN</a>
+                            <div>
+                                <a  class="btn-link" href="https://open.spotify.com/embed/album/4UwFizSE0TB6EzTfkkxlbF">GET IT</a>
                             </div>
                         </div>
                     </div>
@@ -663,21 +663,32 @@
                 <h3 class="booking-subheader">Send us a request and we'll contact you!</h3>
             </div>
 
-            <form class="needs-validation" novalidate>
-                <div class="form-row">
-                    <div class="form-group col-12 col-lg-6 mb-3">
-                        <label for="validationCustom01">First name</label>
-                        <input type="text" class="form-control" id="FormFirstName" placeholder="First name" required>
+            <div class="wrapper-book-form ml-md-auto">
+                <form class="needs-validation" novalidate>
+                    <div class="form-row">
+                        <div class="form-group col-12 col-lg-6 mb-3">
+                            <label for="FormFirstName">First name *</label>
+                            <input type="text" class="form-control" id="FormFirstName" placeholder="First name" required>
+                        </div>
+                        <div class="form-group col-12 col-lg-6 mb-3">
+                            <label for="FormSurname">Last name</label>
+                            <input type="text" class="form-control" id="FormSurname" placeholder="Last name" required>
+                        </div>
                     </div>
-                    <div class="form-group col-12 col-lg-6 mb-3">
-                        <label for="validationCustom02">Last name</label>
-                        <input type="text" class="form-control" id="FormSurname" placeholder="Last name" required>
+                    <div class="form-row">
+                        <div class="form-group col-12 col-lg-6 mb-3">
+                            <label for="FormEmail">Email *</label>
+                            <input type="email" class="form-control" id="FormEmail" placeholder="Email address (required)" required>
+                        </div>
+                        <div class="form-group col-12 col-lg-6 mb-3">
+                            <label for="FormDate">Event Date *</label>
+                            <input type="date" class="form-control" id="FormDate" required>
+                        </div>
                     </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-12 col-lg-6 mb-3">
-                        <label for="FormGuestNumber">Number of guests</label>
-                        <select class="form-control" id="FormGuestNumber" required>
+                    <div class="form-row">
+                        <div class="form-group col-12 col-lg-6 mb-3">
+                            <label for="FormGuestNumber">Number of guests *</label>
+                            <select class="form-control" id="FormGuestNumber" required>
                               <option>-- Please select --</option>
                               <option>0-19</option>
                               <option>20-49</option>
@@ -685,10 +696,10 @@
                               <option>100-199</option>
                               <option>200+</option>
                             </select>
-                    </div>
-                    <div class="form-group col-12 col-lg-6 mb-3">
-                        <label for="FormEventType">Type of event</label>
-                        <select class="form-control" id="FormEventType" required>
+                        </div>
+                        <div class="form-group col-12 col-lg-6 mb-3">
+                            <label for="FormEventType">Type of event</label>
+                            <select class="form-control" id="FormEventType" required>
                               <option>-- Please select --</option>
                               <option>Birthday</option>
                               <option>Corporate</option>
@@ -696,20 +707,24 @@
                               <option>Wedding</option>
                               <option>Other (please specify below)</option>
                             </select>
+                        </div>
                     </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-12 mb-3">
-                        <label for="AdditionalInfo">Additional information</label>
-                        <textarea class="form-control" rows="5" id="AdditionalInfo"></textarea>
+                    <div class="form-row">
+                        <div class="form-group col-12 mb-3">
+                            <label for="AdditionalInfo">Additional information</label>
+                            <textarea class="form-control" rows="5" id="AdditionalInfo"></textarea>
+                        </div>
                     </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-12">
-                        <button type="submit" class="btn btn-submit">Submit</button>
+                    <div class="form-row">
+                        <p>* Required fields</p>
                     </div>
-                </div>
-            </form>
+                    <div class="form-row">
+                        <div class="form-group col-12">
+                            <button type="submit" class="btn btn-submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
 
@@ -726,7 +741,7 @@
                             <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
                         </div>
                         <div class="form-group col-6 col-lg-12">
-                            <button type="submit" class="btn btn-email-join">JOIN</button>
+                            <button type="submit" class="btn btn-submit">JOIN</button>
                         </div>
                     </div>
 
