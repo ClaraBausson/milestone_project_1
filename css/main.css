@@ -281,10 +281,6 @@ button .fa.fa-navicon:hover {
     color: #FF652F;
 }
 
-.active a {
-    color: #FF652F;
-}
-
 .header-text {
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
