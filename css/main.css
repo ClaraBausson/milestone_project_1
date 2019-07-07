@@ -259,7 +259,7 @@ section:nth-of-type(2n+1) {
 }
 
 .container {
-    max-width: 80em;
+    max-width: 100%;
 }
 
 
@@ -458,7 +458,7 @@ section:nth-of-type(2) {
 }
 
 .home-book {
-    padding: 15px;
+    padding: 10px 60px;
 
     color: #FAFAFA;
 }
