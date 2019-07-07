@@ -202,6 +202,7 @@ button .fa.fa-navicon:hover {
     margin: 0px auto 15px;
     border-radius: 5%;
     width: 90%;
+    height: 90%;
 }
 
 .round-img {
@@ -215,18 +216,15 @@ button .fa.fa-navicon:hover {
 .album-img {
     height: 300px;
     width: 300px;
+}
+
+.release-album-img {
+    height: 220px;
+    width: 220px;
     box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.5);
     margin: 15px;
-}
-
-.release-album-img {
-    height: 250px;
-    width: 250px;
-    box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.5);
 }
 
 /*-----------------------------------GLOBAL-----------------------------------*/
