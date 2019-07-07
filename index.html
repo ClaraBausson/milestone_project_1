@@ -36,11 +36,12 @@
 
 </head>
 
-<body>
-    <!------------------------ NAVBAR/HEADER ---------------------------------->
+<body data-spy="scroll" data-target="#Navbar">
+    <!-- NAVBAR/HEADER -------------------------------------------------------->
+
     <header class="header">
 
-        <nav class="navbar navbar-expand-lg bg-primary-dark py-1">
+        <nav id="Navbar" class="navbar navbar-expand-lg bg-primary-dark py-1">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">   
                     <i class="fa fa-navicon"></i>
@@ -50,22 +51,22 @@
 
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
+                    <li class="nav-tabs nav-item" role="tablist">
                         <a class="nav-link subheader-text hvr-float" href="#Home">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-tabs nav-item" role="tablist">
                         <a class="nav-link subheader-text hvr-float" href="#Tour">Tour</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-tabs nav-item" role="tablist">
                         <a class="nav-link subheader-text hvr-float" href="#Gallery">Gallery</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-tabs nav-item" role="tablist">
                         <a class="nav-link subheader-text hvr-float" href="#Music">Music</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-tabs nav-item" role="tablist">
                         <a class="nav-link subheader-text hvr-float" href="#About">About us</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-tabs nav-item" role="tablist">
                         <a class="nav-link subheader-text hvr-float" href="#Booking">Book us</a>
                     </li>
                 </ul>
@@ -95,12 +96,14 @@
 
     </header>
 
-    <!----------------------- LANDING SECTION --------------------------------->
+    <!-- LANDING SECTION ------------------------------------------------------>
+
     <section id="Landing">
         <div class="container-landing"></div>
     </section>
 
-    <!----------------------- HOME SECTION --------------------------------->
+    <!-- HOME SECTION --------------------------------------------------------->
+
     <section id="Home">
         <div class="container container-home">
             <div class="row home-tour-release">
@@ -131,13 +134,18 @@
 
                         </div>
                     </div>
-                    <a class="btn-link text-center float-md-right" href="#Tour">More</a>
+                    <a class="btn-link text-center float-right" href="#Tour">More</a>
                 </div>
                 <div class="col-12 col-md-8 home-release">
-                    <h1  class="text-center p-3">Latest releases</h1>
+                    <h1 class="text-center p-3">Latest releases</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quam, labore nisi tempora non accusamus.</p>
-                    <div class="release-album">
-                        <a href="#Music" target="_blank"><img src="assets/images/albums/album1.jpg" class="album-img"></a>
+                    <div class="row col-12">
+                        <div class="col-12 col-md-6 release-album">
+                            <a href="#Music" target="_blank"><img src="assets/images/albums/album1.jpg" class="release-album-img"></a>
+                        </div>
+                        <div class="col-6 d-none d-md-block release-album">
+                            <iframe src="https://open.spotify.com/embed/album/4UwFizSE0TB6EzTfkkxlbF" width="250" height="250" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        </div>
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque amet deserunt quos accusamus, aliquam illo nisi voluptates neque enim unde?</p>
                 </div>
@@ -158,14 +166,15 @@
                         <h1 class="text-center p-3">Looking for a band?</h1>
                         <p>The Monkees are one of the most exciting live bands currently on the market. We’re most competitively priced and are available to perform UK wide and internationally. Contact us to check our availability and get a quote for your
                             event by using the form on our website.</p>
-                        <a class="btn-link text-center float-md-right" href="#Booking">Book us</a>
+                        <a class="btn-link text-center float-right" href="#Booking">Book us</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!----------------------- TOUR SECTION --------------------------------->
+    <!-- TOUR SECTION --------------------------------------------------------->
+
     <section id="Tour">
         <div class="container container-tour">
             <div class="tour_events">
@@ -342,9 +351,10 @@
         </div>
     </section>
 
-    <!----------------------- GALLERY SECTION --------------------------------->
+    <!-- GALLERY SECTION ------------------------------------------------------>
+
     <section id="Gallery">
-        <div class="container container-gallery">
+        <div class="container container-gallery p-5">
             <div class="row">
                 <div class="col-12">
 
@@ -424,11 +434,12 @@
         </div>
     </section>
 
-    <!----------------------- MUSIC SECTION ----------------------------------->
+    <!-- MUSIC SECTION -------------------------------------------------------->
+
     <section id="Music">
-        <div class="container">
+        <div class="container container-music">
             <!--Display albums only+links for small devices-->
-            <div class="row container-music d-block d-md-none">
+            <div class="row d-block d-md-none p-3">
                 <div class="row">
                     <div class="col-6 div-album-cover">
                         <a href="https://open.spotify.com/album/4UwFizSE0TB6EzTfkkxlbF" target="_blank"><img src="assets/images/albums/album1.jpg" class="album-img"></a>
@@ -464,7 +475,7 @@
             </div>
 
             <!--Display embeds for medium and above devices-->
-            <div class="row container-music d-none d-md-block">
+            <div class="row d-none d-md-block">
                 <div class="row container-music-odd">
                     <div class="col-6 p-0 album-cover">
                         <img src="assets/images/albums/album1.jpg" class="album-img">
@@ -539,10 +550,11 @@
         </div>
     </section>
 
-    <!----------------------- ABOUT SECTION ----------------------------------->
+    <!-- ABOUT SECTION -------------------------------------------------------->
+
     <section id="About">
-        <div class="container">
-            <div class="row container-about">
+        <div class="container container-about">
+            <div class="row p-3">
                 <h1>The Band</h1>
                 <img src="assets/images/band/TheMonkees_0.jpg" class="square-img"></img>
                 <p>
@@ -552,7 +564,7 @@
             </div>
 
             <!--Display in rows for small devices-->
-            <div class="row container-about d-block d-md-none">
+            <div class="row container-band d-block d-md-none p-3">
                 <div class="row">
                     <div class="band-img col-3 col-md-12">
                         <img src="assets/images/band/md.jpg" class="round-img hover-grey"></img>
@@ -591,7 +603,7 @@
             </div>
 
             <!--Display in columns for medium and above devices-->
-            <div class="row container-about d-none d-md-block">
+            <div class="row container-band d-none d-md-block p-3">
                 <div class="row band-img">
                     <div class="band-img col-3">
                         <img src="assets/images/band/md.jpg" class="round-img hover-grey">
@@ -630,7 +642,7 @@
                 </div>
             </div>
 
-            <div class="row container-about">
+            <div class="row p-3">
                 <h1>Latest News</h1>
                 <p>
                     The Monkees are an American rock and pop band conceived in 1966 by the American actor/musicians Micky Dolenz, Michael Nesmith, and Peter Tork with English actor/singer Davy Jones. THey have around 50 years experience of performing live at numerous events
@@ -640,7 +652,8 @@
         </div>
     </section>
 
-    <!----------------------- BOOKING SECTION --------------------------------->
+    <!-- BOOKING SECTION ------------------------------------------------------>
+
     <section id="Booking">
         <div class="container container-booking p-3">
             <div class="row col-12 d-flex justify-content-center text-center p-3">
@@ -677,7 +690,7 @@
                     </div>
                     <div class="form-row">
                         <div class="form-group col-12 col-lg-6 mb-3">
-                            <label for="FormGuestNumber">Number of guests *</label>
+                            <label for="FormGuestNumber">Guests *</label>
                             <select class="form-control" id="FormGuestNumber" required>
                               <option>-- Please select --</option>
                               <option>0-19</option>
@@ -706,9 +719,9 @@
                         </div>
                     </div>
                     <div class="form-row">
-                        <p>* Required fields</p>
+                        <p id="Required-fields">* Required fields</p>
                     </div>
-                    <div class="form-row">
+                    <div class="form-row text-right">
                         <div class="form-group col-12">
                             <button type="submit" class="btn btn-submit">Submit</button>
                         </div>
@@ -719,6 +732,7 @@
     </section>
 
     <!--------------------------- FOOTER -------------------------------------->
+
     <footer class="container-fluid bg-primary-dark">
 
         <div id="footer-details" class="row">
@@ -727,41 +741,43 @@
                     Be the first to know about new releases, special updates and latest news from The Monkees!
                 </p>
             </div>
-            <div class="col-12">
-                 <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
-                <button type="submit" class="btn btn-submit">JOIN</button>
+            <div class="col-12 form-row justify-content-center">
+                <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                <button type="submit" class="btn btn-submit float-right">JOIN</button>
             </div>
             <div class="col-12 text-center mx-auto">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
         </div>
 
-        <div class="col-sm-3 text-nowrap">
-            <p class="inline-block">
-                ©2019 The Monkees.
-            </p>
-        </div>
-        <div class="col-sm-9 d-none d-md-inline-block text-right">
-            <ul class="list-inline social-links">
-                <li class="list-inline-item">
-                    <a target="_blank" href="#">
+        <div class="row pt-3">
+            <div class="col-sm-3 text-nowrap">
+                <p class="inline-block">
+                    ©2019 The Monkees.
+                </p>
+            </div>
+            <div class="col-sm-9 d-none d-md-inline-block text-right">
+                <ul class="list-inline social-links">
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.facebook.com/TheMonkees">
                             <i class="fa fa-facebook" aria-hidden="true"></i>
                             <span class="sr-only">Facebook</span>
                         </a>
-                </li>
-                <li class="list-inline-item">
-                    <a target="_blank" href="#">
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://twitter.com/monkeesofficial">
                             <i class="fa fa-twitter" aria-hidden="true"></i>
                             <span class="sr-only">Twitter</span>
                         </a>
-                </li>
-                <li class="list-inline-item">
-                    <a target="_blank" href="#">
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.youtube.com/themonkees">
                             <i class="fa fa-youtube" aria-hidden="true"></i>
                             <span class="sr-only">YouTube</span>
                         </a>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
         </div>
     </footer>
@@ -769,8 +785,11 @@
 
 
 
-    <!--------------------------- Scripts ------------------------------------->
+    <!-- SCRIPTS -------------------------------------------------------------->
 
+    <!-- MediaPlayer ---------------------------------------------------------->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.10/mediaelement.min.js" integrity="sha256-azPLgoxym4tb1pJK+4KbkQpJRtKd1nwDa4KhQ/PH63c=" crossorigin="anonymous"></script>
 
     <!-- jQuery --------------------------------------------------------------->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -791,7 +810,7 @@
 
     <!-- fancyBox thumbnail helpers ------------------------------------------->
     <script type="text/javascript" src="js/jquery.fancybox-thumbs.js?v=2.0.5"></script>
-    
+
 </body>
 
 </html>
