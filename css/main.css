@@ -86,7 +86,7 @@ h4 {
     color: #FFF;
 }
 
-/*------------------------------Block dividers--------------------------------*/
+/*---------------------------Block dividers/Borders---------------------------*/
 
 .block-divider {
     width: 75px;
@@ -104,6 +104,27 @@ h4 {
 
 .block-divider--short {
     width: 35px;
+}
+
+.border-left--orange {
+    display: inline-block;
+    width: 0;
+    height: 10em;
+    border-left: 2px solid #FF652F;
+}
+
+.border-left--black {
+    display: inline-block;
+    width: 0;
+    height: 10em;
+    border-left: 2px solid black;
+}
+
+.border-left--white {
+    display: inline-block;
+    width: 0;
+    height: 10em;
+    border-left: 2px solid white;
 }
 
 /*-------------------------------Buttons/Forms--------------------------------*/
@@ -434,16 +455,14 @@ section:nth-of-type(2) {
 }
 
 .container-home {
-    background-color: #FF652F;
-    background-color: rgba(0, 0, 0, 0.92);
     padding: 0 15px;
 }
 
 .home-tour {
     background-color: #FF652F;
-    background-color: rgba(250, 250, 250, 1);
-    padding: 15px;
-    color: black;
+    background-color: rgba(0, 0, 0, 0.55);
+    padding: 15px 40px;
+    color: white;
 }
 
 .tour-heading {
@@ -481,9 +500,10 @@ section:nth-of-type(2) {
 }
 
 .home-release {
-    padding: 15px;
-
-    color: #FAFAFA;
+    background-color: #FF652F;
+    background-color: rgba(250, 250, 250, 0.2);
+    padding: 15px 40px;
+    color: black;
 }
 
 .release-album img {
@@ -494,16 +514,16 @@ section:nth-of-type(2) {
 
 .home-news {
     background-color: #FF652F;
-    background-color: rgba(255, 101, 47, 0.8);
-    padding: 15px;
-
+    background-color: rgba(255, 101, 47, 0.5);
+    padding: 15px 40px;
     color: black;
 }
 
 .home-book {
-    padding: 10px 60px;
-
-    color: #FAFAFA;
+    background-color: #FF652F;
+    background-color: rgba(250, 250, 250, 0);
+    padding: 15px 40px;
+    color: black;
 }
 
 /*-------------------------------Tour section------------------------------*/
@@ -584,7 +604,8 @@ section:nth-of-type(4) {
 }
 
 .container-gallery {
-    background-color: rgba(0, 0, 0, 0.98);
+    background-color: rgba(255, 101, 47, 0.3);
+    padding: 5% 10%;
 }
 
 /*--------------------------------Music section-------------------------------*/
@@ -647,23 +668,17 @@ section:nth-of-type(6) {
 }
 
 .container-about {
-    padding: 15px;
+    padding: 50px;
     
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.3);
 
     color: #FAFAFA;
 }
 
 .container-band {
-    background-color: #FF652F;
+    background-color: rgba(0,0,0,0.5);
     color: #FAFAFA;
-}
-
-.border-left--orange {
-    display: inline-block;
-    width: 0;
-    height: 10em;
-    border-left: 2px solid #FF652F;
+    text-align: justify;
 }
 
 .hover-grey {

@@ -51,6 +51,7 @@ All content in the "About Us" in this website were based on https://en.wikipedia
 
 ### Media
 All photos were taken from [Google Images](https://www.google.com/search?q=the+monkees&source=lnms&tbm=isch&sa=X&ved=0ahUKEwi93q_sjqPjAhVgQUEAHZ5cBs4Q_AUIESgC&biw=1536&bih=718).
+All backgrounds were taken from [Pexels](https://www.pexels.com/).
 
 ### Acknowledgements
 The scrollSpy delay JavaScript function was found through this tutorial [here](https://www.abeautifulsite.net/smoothly-scroll-to-an-element-without-a-jquery-plugin-2).
