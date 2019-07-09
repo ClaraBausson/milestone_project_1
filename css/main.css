@@ -693,3 +693,7 @@ label {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
+
+iframe {
+    border: none;
+}
