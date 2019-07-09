@@ -14,16 +14,10 @@
     <!----------------------------- CSS Files --------------------------------->
 
     <!-- Bootstrap 4 ---------------------------------------------------------->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" type="text/css" crossorigin="anonymous">
 
     <!-- fancyBox ------------------------------------------------------------->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-
-    <!-- fancyBox button helpers ---------------------------------------------->
-    <link rel="stylesheet" href="css/jquery.fancybox-buttons.css?v=2.0.5" type="text/css" media="screen" />
-
-    <!-- fancyBox thumbnail helpers ------------------------------------------->
-    <link rel="stylesheet" href="css/jquery.fancybox-thumbs.css?v=2.0.5" type="text/css" media="screen" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" type="text/css" />
 
     <!-- Font Awesome --------------------------------------------------------->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
@@ -141,16 +135,19 @@
                     <h1 class="text-center p-3">Latest releases</h1>
                     <p>Check out our latest album "Good Times!". This is the twelfth studio album by the Monkees. Produced mainly by Adam Schlesinger (with some additional bonus tracks produced by Andrew Sandoval), the album was recorded to commemorate the
                         band's 50th anniversary.</p>
-                    <div class="row col-12 mx-auto">
-                        <div class="col-12 col-md-6 release-album">
-                            <a href="#Music" target="_blank"><img src="https://res.cloudinary.com/dqxvu3dz5/image/upload/v1562618224/assets/images/albums/album1_ytbvio.jpg" class="release-album-img"></a>
+                    <div class="row mx-auto">
+                        <div class="col-12 col-md-3 div-album-cover">
+                            <a href="https://open.spotify.com/album/4UwFizSE0TB6EzTfkkxlbF" target="_blank"><img src="https://res.cloudinary.com/dqxvu3dz5/image/upload/v1562618224/assets/images/albums/album1_ytbvio.jpg" class="album-img"></a>
+                            <iframe src="https://open.spotify.com/embed/album/4UwFizSE0TB6EzTfkkxlbF" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                         </div>
-                        <div class="col-6 d-none d-md-block release-album">
-                            <iframe class="release-album-img" src="https://open.spotify.com/embed/album/4UwFizSE0TB6EzTfkkxlbF" width="250" height="250" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        <div class="col-12 col-md-9">
+                            <p>The project was initiated by Rhino executives John Hughes and Mark Pinkus, who were excited about a 50th anniversary album for the Monkees. Adam Schlesinger of Fountains of Wayne was hired to produce the album, with tracks by the Monkees, initially unreleased songs by the songwriters they used during their initial run including Neil Diamond, Carole King & Gerry Goffin, Harry Nilsson and Tommy Boyce & Bobby Hart and contemporary rock songwriters Schlesinger, Rivers Cuomo, Andy Partridge, Ben Gibbard, Noel Gallagher and Paul Weller. Schlesinger had asked his Fountains of Wayne bandmate Jody Porter to write a song for the album, but it was not used because it was too similar to the title track.</p>
                         </div>
                     </div>
-                    <p>Don't forget to check out our other albums!</p>
-                    <a class="btn-link float-right" href="#Tour">More</a>
+                    <div class="row col-12">
+                        <p>Don't forget to check out our other albums!</p>
+                        <a class="btn-link ml-auto" href="#Tour">More</a>
+                    </div>
                 </div>
             </div>
             <div class="row home-news">
